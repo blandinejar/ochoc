@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="meilleur magasin de chocolats du monde !!!">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> 
+
+    <title>O'Choc</title>
+
+</head>
+<body>
+    <div id="container">
+
+    <header>
+        <h1>O'Choc</h1>
+            <nav>
+                <a href="/">Accueil</a>
+                <a href="/products">Tous les produits</a>
+                <a href="/cart">Panier</a>
+                <% if (locals.user) {%>
+                    <a href="/profil">Bonjour, <%= locals.user %></a>
+                    <!--  à revoir, on ne voit rien quand on se connecte -->
+                    <a href="/logout">Se déconnecter</a>
+                <% } else { %>
+                    <a href="/login">Se connecter</a>
+                    <a href="/signup">S'inscrire</a>
+                <% } %>
+            </nav>
+    </header>
+
+    <main>

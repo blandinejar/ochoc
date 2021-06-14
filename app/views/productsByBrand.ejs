@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<h2>Voici les produits de la marque <%= brand.brand_name%></h2>
+
+<section class="allproducts">
+
+<% for (const product of products) { %>
+    <div class="all_products_page_div">
+        <div class="card-allproducts">
+        <h3><%=product.product_name%></h3>
+        <p>Quantité : <%=product.weight%> grammes</p>
+        <p>Prix : <%=product.price%> euros</p>
+    </div>
+    </div>
+
+<% } %>
+
+</section>
+
+
+
+<%- include('partials/footer') %>

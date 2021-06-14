@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<h2>Se connecter</h2>
+
+
+<form action="" method="POST" class="form-signup">
+
+    <div class="form-label-group">
+      <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+        placeholder="Votre courriel">
+      <label for="email">Votre courriel</label>
+    </div>
+
+    <div class="form-label-group">
+      <input type="password" class="form-control" id="password" name="password" placeholder="Votre mot de passe">
+      <label for="password">Votre mot de passe</label>
+    </div>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Se souvenir de moi
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
+  </form>
+
+
+<%- include('partials/footer') %>

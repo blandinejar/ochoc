@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+        <h2>Welcome to the best shop in the world!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita error repudiandae ut corrupti consectetur nulla porro perspiciatis, ducimus odit eveniet sapiente saepe minus beatae molestias ea repellat deserunt! Facilis, in!</p>
+
+        <div class="all_products">
+        <!--  BOUCLE -->
+        <% for (const brand of brands) { %>
+            <div class="card-index">
+                <h3><%=brand.brand_name%></h3>
+                <a href="/brand/<%=brand.id%>">Voir les produits de la marque</a>
+            </div>
+        <% } %>
+      
+    </div>
+
+<%- include('partials/footer') %>

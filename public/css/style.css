@@ -1,0 +1,143 @@
+
+
+body {
+    background-color: #FFEBC6;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.5em;
+}
+
+main {
+    min-height: 100vh;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.3em;
+}
+
+footer {
+    margin-top: 1.3em;
+}
+
+header h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+header, footer {
+    background-color: #FFB100;
+    padding: 1.1em;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    padding-left: 0.8em;
+}
+
+h3 {
+    color: #006C67;
+}
+
+/* .container {
+    display: flex;
+} */
+
+.all_products {
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column;     */
+}
+
+
+
+.card-index {
+    margin: auto;
+    padding: 1em;
+    border: 2px #003844 solid;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    width: 270px;
+    height: 350px;
+}
+
+.all_products_page_div {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.card-allproducts {
+    margin: 1em;
+    padding: 1em;
+    border: 2px #003844 solid;
+    width: 270px;
+    height: 350px;
+
+}
+
+
+.card h3 {
+    font-size: 2em;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+
+main h2 {
+    color: #F194B4;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
+}
+
+main p {
+    margin: 1em;
+    padding-bottom: 1em;
+}
+
+.allproducts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.form {
+
+    padding: 2em;
+}
+
+.btn {
+    font-size: 0.9em;
+    margin-top: 1.8em;
+    margin-left: 2em;
+    width: 10em;
+    text-align: center;
+    background-color:#f194b5a4;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #F194B4;
+}
+
+.form-control {
+    font-size: 1.1em;
+    margin: 0.3em;
+}
